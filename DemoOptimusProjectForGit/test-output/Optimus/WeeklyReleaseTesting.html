@@ -1,0 +1,1249 @@
+<html>
+<head>
+<title>TestNG:  WeeklyReleaseTesting</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WeeklyReleaseTesting</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>216/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 23 12:17:36 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>6508 seconds (6508274 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddOpenOrderDiscount()'><b>TakeAwayaddOpenOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (874, 633). Other element would receive the click: &lt;ion-backdrop disable-activated=&quot;&quot; role=&quot;presentation&quot; tappable=&quot;&quot; class=&quot;backdrop-no-tappable&quot; style=&quot;opacity: 0.4;&quot;&gt;&lt;/ion-backdrop&gt;
+  (Session info: chrome=123.0.6312.124)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57d0853aac77d1a64eaa959b34cf3819, clickElement {id=f.3673D758B0AFB5712C597B41D8B9CD3A.d.37C27A3AE61BFBED31BE3C50ADBE7267.e.3330}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\MAKBUL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54660}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54660/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (57d0853aac77d1a64eaa959b34cf3819)] -&gt; xpath: //p[contains(text(),&apos;Save&apos;)]]
+Session ID: 57d0853aac77d1a64eaa959b34cf3819
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.optimus.OptimusMavenProject.TakeAwayXpath.uTakeAwayclickOnSave(TakeAwayXpath.java:125)
+	at com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddOpenOrderDiscount(TakeAway.java:1515)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1773431209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1773431209'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (874, 633). Other element would receive the click: &lt;ion-backdrop disable-activated=&quot;&quot; role=&quot;presentation&quot; tappable=&quot;&quot; class=&quot;backdrop-no-tappable&quot; style=&quot;opacity: 0.4;&quot;&gt;&lt;/ion-backdrop&gt;
+  (Session info: chrome=123.0.6312.124)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57d0853aac77d1a64eaa959b34cf3819, clickElement {id=f.3673D758B0AFB5712C597B41D8B9CD3A.d.37C27A3AE61BFBED31BE3C50ADBE7267.e.3330}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\MAKBUL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54660}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54660/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (57d0853aac77d1a64eaa959b34cf3819)] -&gt; xpath: //p[contains(text(),&apos;Save&apos;)]]
+Session ID: 57d0853aac77d1a64eaa959b34cf3819
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.optimus.OptimusMavenProject.TakeAwayXpath.uTakeAwayclickOnSave(TakeAwayXpath.java:125)
+	at com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddOpenOrderDiscount(TakeAway.java:1515)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingwithOtherCurrency()'><b>RoomPostingwithOtherCurrency</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>35</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeVoidItem()'><b>NoChargeVoidItem</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceMergeOrders()'><b>RoomServiceMergeOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingRecallOrder()'><b>RoomPostingRecallOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderSummaryOrderRePrintwithLabel()'><b>OrderSummaryOrderRePrintwithLabel</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>34</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleCheckValidationOnExtraCharge()'><b>TakeAwaySettleCheckValidationOnExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithTakeAway()'><b>NoChargewithTakeAway</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummaryVoidOrder()'><b>OrderSummaryVoidOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryRecallOrderVoidItem()'><b>DeliveryRecallOrderVoidItem</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.recallGRNaddItem()'><b>recallGRNaddItem</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>19</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddMultipleOrderDiscount()'><b>TakeAwayaddMultipleOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>30</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ContactlessTakeOrder()'><b>ContactlessTakeOrder</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>53</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.approveOrderwithOrderofMultipleItems()'><b>approveOrderwithOrderofMultipleItems</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddAutoDiscountOnModifie()'><b>TakeAwayAddAutoDiscountOnModifie</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addRemovedExtarChrage()'><b>addRemovedExtarChrage</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>39</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaysettleOrderwithRoomPost()'><b>TakeAwaysettleOrderwithRoomPost</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>29</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.BankwithSurcharge()'><b>BankwithSurcharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceTakeOrder()'><b>RoomServiceTakeOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>18</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addMultipleItemDiscount()'><b>addMultipleItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettlewithOtherCurrency()'><b>TakeAwaySettlewithOtherCurrency</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>36</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddBulkItemDiscount()'><b>TakeAwayAddBulkItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.voidMultipleItem()'><b>voidMultipleItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>48</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithCredit()'><b>settleOrderwithCredit</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithCreditUpdateGuestInfo()'><b>settleOrderwithCreditUpdateGuestInfo</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.recallGRNRemoveItem()'><b>recallGRNRemoveItem</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceMergeFiveOrders()'><b>RoomServiceMergeFiveOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrderByQTY()'><b>RoomPostingSplitOrderByQTY</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>39</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddAutoDiscountOnModifier()'><b>AddAutoDiscountOnModifier</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>40</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveMultipleExtraCharge()'><b>TakeAwayRemoveMultipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummarySplitOrderbyCategory()'><b>OrderSummarySplitOrderbyCategory</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>34</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddOpenOrderDiscount()'><b>AddOpenOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SettleOrderwithCash()'><b>SettleOrderwithCash</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>27</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaycheckWithIncreaseQTY()'><b>TakeAwaycheckWithIncreaseQTY</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRecallOrderAndSettlewithQuickPay()'><b>TakeAwayRecallOrderAndSettlewithQuickPay</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>11</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeDailyLimit()'><b>NoChargeDailyLimit</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>47</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SettleOrderAfteraddDiscounts()'><b>SettleOrderAfteraddDiscounts</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>39</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>27</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAdd100ItemDiscount()'><b>TakeAwayAdd100ItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>36</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrderEquallyBy3()'><b>RoomPostingSplitOrderEquallyBy3</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.removeExtraCharge()'><b>removeExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.NewOrderwithTransferItem()'><b>NewOrderwithTransferItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>43</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithTwoCurrency()'><b>settleOrderwithTwoCurrency</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>48</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveBulkItemDiscount()'><b>TakeAwayRemoveBulkItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryTakeNewOrder()'><b>DeliveryTakeNewOrder</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>54</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleOrderWithCredit()'><b>TakeAwaySettleOrderWithCredit</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>19</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.voidItemThroughItemPopup()'><b>voidItemThroughItemPopup</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>38</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithRoomPosting()'><b>NoChargewithRoomPosting</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>27</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingPostandFinishOrder()'><b>RoomPostingPostandFinishOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>11</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TarnsferOrderByQTY()'><b>TarnsferOrderByQTY</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.voidItemfromCart()'><b>voidItemfromCart</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>65</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRecallOrder()'><b>TakeAwayRecallOrder</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRecallOrderandAddSameItem()'><b>TakeAwayRecallOrderandAddSameItem</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayOverwriteItemDiscount()'><b>TakeAwayOverwriteItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>46</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleOrderwithBank()'><b>TakeAwaySettleOrderwithBank</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeMonthlyLimit()'><b>NoChargeMonthlyLimit</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>46</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addItemDiscount()'><b>addItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.DeclineOrder()'><b>DeclineOrder</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.DeclineOrderfromTable()'><b>DeclineOrderfromTable</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>37</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.Add100ItemDiscount()'><b>Add100ItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>32</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddOrderDiscount()'><b>TakeAwayAddOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.GRNwithMaximumPopupNotification()'><b>GRNwithMaximumPopupNotification</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddBothOrderandItemDiscount()'><b>TakeAwayaddBothOrderandItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>43</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ContactlessApproveOrder()'><b>ContactlessApproveOrder</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.DeletePayment()'><b>DeletePayment</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>51</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addMultipleOrderDiscount()'><b>addMultipleOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceMergeFourOrders()'><b>RoomServiceMergeFourOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.RecallOrder()'><b>RecallOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderRePrintwithLabel()'><b>OrderRePrintwithLabel</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveOrderDiscount()'><b>TakeAwayRemoveOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySaveOrder()'><b>TakeAwaySaveOrder</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>32</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceMergeThreeOrders()'><b>RoomServiceMergeThreeOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddremovedItemDiscount()'><b>AddremovedItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.RecallOrderAddItem()'><b>RecallOrderAddItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummaryRecall()'><b>OrderSummaryRecall</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.searchNumber()'><b>searchNumber</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>63</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.voidItem()'><b>voidItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>23</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeRecallOrderIncreaseQTY()'><b>NoChargeRecallOrderIncreaseQTY</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomServiceMergeTwoOrders()'><b>RoomServiceMergeTwoOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.DeclineOrderfromContactlessPage()'><b>DeclineOrderfromContactlessPage</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>46</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.MergeAndSettleOrders()'><b>MergeAndSettleOrders</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.AddGRN()'><b>AddGRN</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>35</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummarySettleOrder()'><b>OrderSummarySettleOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSettleOrderwithBank()'><b>RoomPostingSettleOrderwithBank</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>14</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSettlewithPosting()'><b>RoomPostingSettlewithPosting</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderSummaryOrderRePrintKOT()'><b>OrderSummaryOrderRePrintKOT</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.QuickPay()'><b>QuickPay</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithOtherCurrency()'><b>settleOrderwithOtherCurrency</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryUndoAction()'><b>DeliveryUndoAction</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddOpenItemDiscount()'><b>TakeAwayaddOpenItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>205</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummaryMergeOrder()'><b>OrderSummaryMergeOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.RecallOrderQuickPay()'><b>RecallOrderQuickPay</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayBankwithSurcharge()'><b>TakeAwayBankwithSurcharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>27</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.MergeAndPrintOrders()'><b>MergeAndPrintOrders</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrderEquallyBy4()'><b>RoomPostingSplitOrderEquallyBy4</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleOrder()'><b>TakeAwaySettleOrder</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>21</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.multipleExtraCharge()'><b>multipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.VoidOrder()'><b>VoidOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>19</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithInvalidPin()'><b>NoChargewithInvalidPin</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>45</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.removeOrderDiscount()'><b>removeOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.OverwriteItemDiscount()'><b>OverwriteItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>56</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SettledOrderwithmultipleExtraCharge()'><b>SettledOrderwithmultipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>30</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveItemDiscount()'><b>TakeAwayRemoveItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TransferNewOrders()'><b>TransferNewOrders</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderSummaryOrderRePrintwithCaptain()'><b>OrderSummaryOrderRePrintwithCaptain</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addOrderDiscount()'><b>addOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TarnsferItemintoOldOrder()'><b>TarnsferItemintoOldOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>35</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliverySettleOrderWithQuickPay()'><b>DeliverySettleOrderWithQuickPay</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>69</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TransferMultipleOrder()'><b>TransferMultipleOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.QuickPayOrderwithExtraCharge()'><b>QuickPayOrderwithExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddMultiplerItemandSaveIt()'><b>TakeAwayAddMultiplerItemandSaveIt</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.MergeMultipleOrdersAndVoid()'><b>MergeMultipleOrdersAndVoid</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>29</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleOrderWithMultipleExtraCharge()'><b>TakeAwaySettleOrderWithMultipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>27</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddremovedOrderDiscount()'><b>AddremovedOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingFinishOrder()'><b>RoomPostingFinishOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>34</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SplitOrderByEqually2()'><b>SplitOrderByEqually2</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummarySettleBulkOrder()'><b>OrderSummarySettleBulkOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>44</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeWithGuestInformation()'><b>NoChargeWithGuestInformation</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>32</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.approveOrderfromContactlessPage()'><b>approveOrderfromContactlessPage</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>41</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddItemDiscount()'><b>TakeAwayAddItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SplidOrdersByQuantity()'><b>SplidOrdersByQuantity</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAdd100OrderDiscount()'><b>TakeAwayAdd100OrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithUserChange()'><b>NoChargewithUserChange</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>44</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.CheckValidationsonExtarChrage()'><b>CheckValidationsonExtarChrage</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>13</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TakeOrder()'><b>TakeOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.splitOrderbyCategory()'><b>splitOrderbyCategory</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>61</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliverySettleOrder()'><b>DeliverySettleOrder</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addModifierItem()'><b>addModifierItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>21</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ContactlessItemGroupOrder()'><b>ContactlessItemGroupOrder</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>52</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithDeliveryManager()'><b>NoChargewithDeliveryManager</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>46</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.splitOrderbySeat()'><b>splitOrderbySeat</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>32</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.QuickPayAfteraddDiscounts()'><b>QuickPayAfteraddDiscounts</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>11</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.DeclineOrderonViewOrder()'><b>DeclineOrderonViewOrder</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.AddMultipleGRN()'><b>AddMultipleGRN</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>90</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayFireItem()'><b>TakeAwayFireItem</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddOpenItemDiscount()'><b>AddOpenItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddExtraCharge()'><b>TakeAwayAddExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSettleOrderwithCash()'><b>RoomPostingSettleOrderwithCash</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.voidModifierItem()'><b>voidModifierItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>32</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TransferOrders2()'><b>TransferOrders2</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryDispatchOrder()'><b>DeliveryDispatchOrder</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.CheckValidations()'><b>CheckValidations</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>18</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.MergeTwoOrders()'><b>MergeTwoOrders</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ApproveOrderfromTable()'><b>ApproveOrderfromTable</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithExtraCharge()'><b>settleOrderwithExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummarySplitOrderbyQTY()'><b>OrderSummarySplitOrderbyQTY</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderRePrintwithCaptain()'><b>OrderRePrintwithCaptain</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrder()'><b>RoomPostingSplitOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrderEquallyBy5()'><b>RoomPostingSplitOrderEquallyBy5</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryRecallOrderAddItem()'><b>DeliveryRecallOrderAddItem</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderRePrintwithKOT()'><b>OrderRePrintwithKOT</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.checkValidation()'><b>checkValidation</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveExtraCharge()'><b>TakeAwayRemoveExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingMergeandSettleOrder()'><b>RoomPostingMergeandSettleOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.OrderSummaryOrderPrint()'><b>OrderSummaryOrderPrint</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.CreditwithInsufficientBalance()'><b>CreditwithInsufficientBalance</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>37</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.removeItemDiscount()'><b>removeItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayRemoveItem()'><b>TakeAwayRemoveItem</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.VoidMultipleGRN()'><b>VoidMultipleGRN</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>23</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryOperations()'><b>DeliveryOperations</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>31</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaycheckWithDecreaseQTY()'><b>TakeAwaycheckWithDecreaseQTY</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TransferOrders()'><b>TransferOrders</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddDiscountOnModifier()'><b>TakeAwayAddDiscountOnModifier</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.CashwithSurcharge()'><b>CashwithSurcharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddExtraChargeAndSettleorder()'><b>TakeAwayAddExtraChargeAndSettleorder</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryAssignDriver()'><b>DeliveryAssignDriver</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>37</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaySettleOrderWithMultipleCurrency()'><b>TakeAwaySettleOrderWithMultipleCurrency</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>58</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.VoidMultipleOrder()'><b>VoidMultipleOrder</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>94</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayTakeAwaydeletePayment()'><b>TakeAwayTakeAwaydeletePayment</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>51</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.IncreaseMultipleItemQTY()'><b>IncreaseMultipleItemQTY</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.SettleOrderwithBank()'><b>SettleOrderwithBank</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.addExtraCharge()'><b>addExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderwithRoomPost()'><b>settleOrderwithRoomPost</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingRecallOrderDeleteItem()'><b>RoomPostingRecallOrderDeleteItem</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>17</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.RecallGRN()'><b>RecallGRN</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>14</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.settleOrderPartially()'><b>settleOrderPartially</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>44</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayCashwithSurcharge()'><b>TakeAwayCashwithSurcharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>36</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummaryMergeOrder1()'><b>OrderSummaryMergeOrder1</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingSplitOrderByCategory()'><b>RoomPostingSplitOrderByCategory</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>50</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingVoidMultipleOrders()'><b>RoomPostingVoidMultipleOrders</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>101</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.DeliveryVoidOrder()'><b>DeliveryVoidOrder</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>61</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeRecallOrderAddItem()'><b>NoChargeRecallOrderAddItem</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSplitOrder()'><b>OrderSplitOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.RecallOrderandDecreaseQTY()'><b>RecallOrderandDecreaseQTY</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>23</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.TransferOrders1()'><b>TransferOrders1</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddMultipleItem()'><b>AddMultipleItem</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>24</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayHoldItem()'><b>TakeAwayHoldItem</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.Add100OrderDiscount()'><b>Add100OrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>30</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.AddOrder()'><b>AddOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>18</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithPin()'><b>NoChargewithPin</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>39</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaysettleOrderPartially()'><b>TakeAwaysettleOrderPartially</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>49</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargewithDineIn()'><b>NoChargewithDineIn</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>30</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DeliveryManager.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.DeliveryManager</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.DeliveryManager@6b09fb41</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ContactLessRepeatItem()'><b>ContactLessRepeatItem</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>37</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.GRN.VoidGRN()'><b>VoidGRN</b><br>Test class: com.optimus.OptimusMavenProject.GRN</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.GRN@782859e</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayOrdersettleThroughQuickPay()'><b>TakeAwayOrdersettleThroughQuickPay</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>11</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.AddDiscountOnModifier()'><b>AddDiscountOnModifier</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>35</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RePrint.RePrintOrder()'><b>RePrintOrder</b><br>Test class: com.optimus.OptimusMavenProject.RePrint</td>
+<td></td>
+<td>36</td>
+<td>com.optimus.OptimusMavenProject.RePrint@23f5b5dc</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayCreditwithInsufficientBalance()'><b>TakeAwayCreditwithInsufficientBalance</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>33</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.DineIn.removeMultipleExtraCharge()'><b>removeMultipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.DineIn</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.DineIn@3feb2dda</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayaddMultipleItemDiscount()'><b>TakeAwayaddMultipleItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>28</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwaysettleOrderwithCreditUpdateGuestInfo()'><b>TakeAwaysettleOrderwithCreditUpdateGuestInfo</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>29</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.NoChargeTakeOrderOrder()'><b>NoChargeTakeOrderOrder</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>26</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddMultipleExtraCharge()'><b>TakeAwayAddMultipleExtraCharge</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.NoCharge.CheckValidationOnAccoutnField()'><b>CheckValidationOnAccoutnField</b><br>Test class: com.optimus.OptimusMavenProject.NoCharge</td>
+<td></td>
+<td>16</td>
+<td>com.optimus.OptimusMavenProject.NoCharge@624ea235</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.loginwithValidUser()'><b>loginwithValidUser</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>22</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.Contactless.ContactlessModifier()'><b>ContactlessModifier</b><br>Test class: com.optimus.OptimusMavenProject.Contactless</td>
+<td></td>
+<td>46</td>
+<td>com.optimus.OptimusMavenProject.Contactless@34bde49d</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddRemovedItemDiscount()'><b>TakeAwayAddRemovedItemDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>20</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.TakeAway.TakeAwayAddRemovedOrderDiscount()'><b>TakeAwayAddRemovedOrderDiscount</b><br>Test class: com.optimus.OptimusMavenProject.TakeAway</td>
+<td></td>
+<td>15</td>
+<td>com.optimus.OptimusMavenProject.TakeAway@4b520ea8</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.RoomService.RoomPostingVoidOrder()'><b>RoomPostingVoidOrder</b><br>Test class: com.optimus.OptimusMavenProject.RoomService</td>
+<td></td>
+<td>25</td>
+<td>com.optimus.OptimusMavenProject.RoomService@16150369</td></tr>
+<tr>
+<td title='com.optimus.OptimusMavenProject.OrderSummary.OrderSummaryVoidMultipleOrder()'><b>OrderSummaryVoidMultipleOrder</b><br>Test class: com.optimus.OptimusMavenProject.OrderSummary</td>
+<td></td>
+<td>45</td>
+<td>com.optimus.OptimusMavenProject.OrderSummary@3932c79a</td></tr>
+</table><p>
+</body>
+</html>

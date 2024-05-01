@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-29T14:36:15 IST" name="Default suite" finished-at="2024-04-29T14:37:30 IST" duration-ms="75261">
+    <groups>
+    </groups>
+    <test started-at="2024-04-29T14:36:15 IST" name="Default test" finished-at="2024-04-29T14:37:30 IST" duration-ms="75261">
+      <class name="com.optimus.OptimusMavenProject.IssueCheck">
+        <test-method signature="loginwithValidUser()[pri:1, instance:com.optimus.OptimusMavenProject.IssueCheck@74d1dc36]" started-at="2024-04-29T14:36:15 IST" name="loginwithValidUser" finished-at="2024-04-29T14:36:42 IST" duration-ms="26702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithValidUser -->
+        <test-method signature="TakeAwaySaveOrder()[pri:2, instance:com.optimus.OptimusMavenProject.IssueCheck@74d1dc36]" started-at="2024-04-29T14:36:42 IST" name="TakeAwaySaveOrder" finished-at="2024-04-29T14:37:30 IST" duration-ms="48483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeAwaySaveOrder -->
+      </class> <!-- com.optimus.OptimusMavenProject.IssueCheck -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

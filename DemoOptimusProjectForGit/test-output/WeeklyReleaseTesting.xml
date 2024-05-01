@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Optimus">
+    <test name="WeeklyReleaseTesting">
+         <classes>
+			<class name="com.optimus.OptimusMavenProject.DineIn"/> 
+  		 	<class name="com.optimus.OptimusMavenProject.TakeAway"/>
+  		 	<class name="com.optimus.OptimusMavenProject.RoomService"/>
+  		 	<class name="com.optimus.OptimusMavenProject.DeliveryManager"/>
+  		 	<class name="com.optimus.OptimusMavenProject.NoCharge"/>
+  		 	<class name="com.optimus.OptimusMavenProject.OrderSummary"/>
+ 		 	<class name="com.optimus.OptimusMavenProject.GRN"/>  
+  		 	<class name="com.optimus.OptimusMavenProject.RePrint"/> 
+            <class name="com.optimus.OptimusMavenProject.Contactless"/> 
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
